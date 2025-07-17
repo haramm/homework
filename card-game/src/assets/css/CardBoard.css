@@ -1,0 +1,34 @@
+.container {
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-div {
+    height: 70%;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px;
+}
+.bottom-div {
+    height: 30%;
+    background-color: #eeeaee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.text-div {
+    width: 30%;
+    border: 2px solid greenyellow;
+    border-radius: 7px;
+    background-color: #aaaaaa;
+    text-align: left;
+    padding-left: 1rem;
+}
+

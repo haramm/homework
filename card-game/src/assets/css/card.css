@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #acca77;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-div {
+    height: 70%;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px;
+}
+.btn-div {
+    height: 30%;
+    background-color: #eeeaee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.checkbox-div {
+    display: flex;
+    height: 10%;
+}
+.number-div {
+    display: flex;
+    height: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
