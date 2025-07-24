@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import '../assets/css/library.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LendBook from './lendBook';
+import BookList from './BookList';
+import LendableList from './LendableList';
 
 function Library(props) {
 
@@ -134,17 +136,7 @@ function Library(props) {
                     <span>대여한 도서 목록</span>
                     <button type='button' className='btn btn-success' onClick={returnBook}>반납</button>
                 </section>
-                <div className='bookList'>
-                        {
-                            lendedBookList?.map((lendBook, index) => (
-                                <LendBook key={index} 
-                                        lendBook={lendBook}
-                                        isChecked={checkedBookList.includes(lendBook)}
-                                        onCheck = {handleBookCheck}
-                                />
-                            ))
-                        }
-                </div>
+                <BookList lendedBookList={lendedBookList} checkedBookList={checkedBookList} handleBookCheck={handleBookCheck}/>
                 <p style={{width : '90%'}}>도서 목록</p>
                 <div className='inputBox'>
                     <input type='text' className='inputText' value={inputText} onChange={(e) => setInputText(e.target.value)}/>
@@ -152,17 +144,7 @@ function Library(props) {
                     <button type='button' className='btn btn-light' onClick={lendBtn}>대여</button>
                     <button type='button' className='btn btn-danger' onClick={deleteBtn}>삭제</button>
                 </div>
-                <div className='lendableList'>
-                    {
-                        lendableBookList?.map((lendableBook, index) => (
-                            <LendBook key={index} 
-                                    lendBook={lendableBook}
-                                    isChecked={checkedBookList.includes(lendableBook)}
-                                    onCheck={handleBookCheck}
-                            />
-                        ))
-                    }
-                </div>
+                <LendableList lendableBookList={lendableBookList} checkedBookList={checkedBookList} handleBookCheck={handleBookCheck}/>
             </div>
         </div>
     );
