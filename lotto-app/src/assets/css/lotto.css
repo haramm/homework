@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+.main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.lotto-button-box {
+    height: 10vh;
+    display: flex;
+    justify-self: flex-end;
+    
+}
+.answer-lotto-box {
+    display: flex;
+    height: 15vh;
+    background-color: orange;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user-lotto-box {
+    display: flex;
+    height: 12vh;
+    background-color: aliceblue;
+    border: 1px solid black;
+    align-items: center;
+}
+.result {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 30px;
+    color: rgb(104, 124, 225);
+}
