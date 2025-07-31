@@ -1,7 +1,7 @@
 package parking_fee;
 
 
-public class ParkingFee {
+public class ParkingMain {
 
 	public static void main(String[] args) {
 		
