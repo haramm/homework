@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>안녕 boot</h1>
+    <!-- thymeleaf 반복 -->
+    <tr th:each="item : ${dataList}">
+
+    </tr>
+    <!-- thymeleaf 조건문 -->
+    <p th:if="${isLogin == true}">보이기</p>
+</body>
+</html>
