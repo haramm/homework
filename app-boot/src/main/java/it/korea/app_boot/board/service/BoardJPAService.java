@@ -138,6 +138,9 @@ public class BoardJPAService {
                 fileEntity.setFileSize(request.getFile().getSize());
                 entity.addFiles(fileEntity);
             }
+            else {
+                throw new Exception("파일 업로드 실패");
+            }
         }
         boardRepository.save(entity);
 

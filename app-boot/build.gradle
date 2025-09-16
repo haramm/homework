@@ -71,7 +71,10 @@ dependencies {
 	implementation 'org.webjars.npm:axios:1.10.0'
 	//이미지 리사이즈
 	implementation 'com.jhlabs:filters:2.0.235-1'
-	implementation 'com.mortennobel:java-image-scaling:0.8.6' 
+	implementation 'com.mortennobel:java-image-scaling:0.8.6'
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0' 
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+	implementation 'org.springframework.boot:spring-boot-starter-security:3.5.5'
 
 }
 

@@ -15,5 +15,6 @@ public class GalleryRequest {
     private String title;
     @NotNull(message = "파일은 필수입니다")
     private MultipartFile file;
+    private String nums;
 
 }

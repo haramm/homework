@@ -39,7 +39,7 @@ public class FileUtils {
         }
 
         String fileName = file.getOriginalFilename();
-        String extension = fileName.substring(fileName.lastIndexOf(".") + 1);
+        String extension = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
         String randName = UUID.randomUUID().toString().replaceAll("-", "").substring(0, 16);
         String storedFileName = randName + "." + extension;
 

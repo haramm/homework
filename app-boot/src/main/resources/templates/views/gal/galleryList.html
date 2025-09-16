@@ -152,9 +152,19 @@
             const link = $(`<a href="javascript:void(0)"></a>`);
             link.text(data.title);
             dateSpan.text(' | ' + data.lastModifiedDate);
-            // link.on('click', function() {
+            
+            link.on('click', function() {
                 
-            // });
+                modalType = 'update';
+                const modal = $('#gallModal');
+                modal.modal('show');
+                $('#gallModalLabel').text('수정');
+                $('#title').val(data.title);
+                $('#file').val('');
+                $('#gallFrm').data('id', data.nums);
+                
+            });
+
             rootDiv.append(checkBox);
             imgBox.append(img);
             rootDiv.append(link);
@@ -166,6 +176,39 @@
             
         }
 
+        function saveGallery() {
+            const form = document.getElementById("gallFrm");
+            const formData = new FormData(form);
+
+            // 등록/수정 구분
+            let url = "/api/v1/gal";
+            let method = "post";
+
+            if (modalType === 'update') {
+                method = "put"; // 수정일 때는 put
+                // 필요 시 formData.append("id", 선택된 게시물 id) 같은 값 추가
+                const selectedId = $('#gallFrm').data('id');
+                formData.append("nums", selectedId);
+            }
+
+            axios({
+                method: method,
+                url: url,
+                data: formData,
+                headers: {
+                "Content-Type": "multipart/form-data"
+                }
+            })
+            .then(res => {
+                alert("저장되었습니다.");
+                $("#gallModal").modal("hide"); // 모달 닫기
+                getData(); // 갱신
+            })
+            .catch(err => {
+                console.error(err);
+                alert("저장 중 오류가 발생했습니다.");
+            });
+        }
 
         $(document).ready(function() {
             getData();

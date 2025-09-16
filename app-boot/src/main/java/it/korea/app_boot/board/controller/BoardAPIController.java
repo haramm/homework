@@ -28,11 +28,13 @@ import it.korea.app_boot.board.service.BoardJPAService;
 import it.korea.app_boot.board.service.BoardService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 //return이 view가 아닌 data
 @RestController
 @RequestMapping("/api/v1")
 @RequiredArgsConstructor
+@Slf4j
 public class BoardAPIController {
 
     private final BoardService service;
@@ -60,6 +62,7 @@ public class BoardAPIController {
 
         Map<String,Object> resultMap = new HashMap<>();
         HttpStatus status = HttpStatus.OK;
+        log.info("=========== 게시판 데이터 가져오기 ============");
 
         List<Sort.Order> sorts = new ArrayList<>();
         String[] sidxs = searchDTO.getSidx().split(",");

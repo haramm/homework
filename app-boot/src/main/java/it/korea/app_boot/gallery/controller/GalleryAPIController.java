@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -52,5 +53,22 @@ public class GalleryAPIController {
 
         return new ResponseEntity<>(resultMap, HttpStatus.OK);
         
+    }
+
+    @PutMapping("/gal")
+    public ResponseEntity<Map<String, Object>> updateGallery(@Valid @ModelAttribute GalleryRequest request) throws Exception {
+        Map<String, Object> resultMap = new HashMap<>();
+        HttpStatus status = HttpStatus.OK;
+
+        try {
+            galleryService.updateGallery(request);
+            resultMap.put("resultCode", 200);
+            resultMap.put("resultMessage", "OK");
+        } 
+        catch(Exception e) {
+            throw new Exception(e.getMessage() == null ? "서버에러" : e.getMessage());
+        }
+
+        return new ResponseEntity<>(resultMap, status);
     }
 }

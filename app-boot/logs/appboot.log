@@ -1,0 +1,1316 @@
+[2025-09-16 09:14:56:2089][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 09:14:56:2226][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 26192 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 09:14:56:2229][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 09:14:56:2871][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2025-09-16 09:14:56:2871][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2025-09-16 09:14:58:4856][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 09:14:59:5014][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140 ms. Found 3 JPA repository interfaces.
+[2025-09-16 09:14:59:5281][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 09:15:00:6498][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 09:15:00:6530][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:15:00:6533][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 09:15:00:6533][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 09:15:00:6694][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 09:15:00:6694][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3821 ms
+[2025-09-16 09:15:01:7052][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 09:15:01:7131][restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 09:15:01:7183][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 09:15:01:7733][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 09:15:01:7787][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 09:15:02:7922][restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3c0079ed
+[2025-09-16 09:15:02:7925][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 09:15:02:7967][restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-09-16 09:15:02:7983][restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -> dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@464fb16f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7ca0b305)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6ac774a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@45177266)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7e687762) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@729cb31)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@62daeab9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ca020c6)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@21ce8757) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6877b01c)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5d4d0089) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4076bdf6)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@15d76e90) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4075db66)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7509c2a9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@e548f3)
+[2025-09-16 09:15:02:8003][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2e681591) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@40a845d1)
+[2025-09-16 09:15:03:9317][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 09:15:03:9368][restartedMain] INFO  p6spy - 2025-09-16 09:15:03 | OperationTime : 5ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        table_name 
+    from
+        information_schema.TABLES 
+    where
+        table_schema=database() 
+        and table_type='SEQUENCE'
+[2025-09-16 09:15:03:9401][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 09:15:04:10033][restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[2025-09-16 09:15:05:11130][restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fdc82b60-5334-44c7-ab04-79b12b50acd4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-09-16 09:15:05:11149][restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-09-16 09:15:05:11367][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2025-09-16 09:15:05:11769][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2025-09-16 09:15:05:11854][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2025-09-16 09:15:05:11873][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:15:05:11884][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+[2025-09-16 09:15:06:11906][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Started AppBootApplication in 10.761 seconds (process running for 12.834)
+[2025-09-16 09:15:46:52329][http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-09-16 09:15:46:52329][http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2025-09-16 09:15:46:52329][http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2025-09-16 09:15:47:53588][http-nio-9090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler it.korea.app_boot.common.handler.CommonExceptionHandler#handleException(Exception)
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class it.korea.app_boot.common.dto.ErrorResponse] with preset Content-Type 'text/css'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:365)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:263)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1360)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1161)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:219)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2025-09-16 09:15:47:53588][http-nio-9090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler it.korea.app_boot.common.handler.CommonExceptionHandler#handleException(Exception)
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class it.korea.app_boot.common.dto.ErrorResponse] with preset Content-Type 'text/css'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:365)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:263)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1360)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1161)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:219)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2025-09-16 09:15:47:53727][http-nio-9090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 09:15:47:53751][http-nio-9090-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:15:47:53754][http-nio-9090-exec-7] INFO  p6spy - 2025-09-16 09:15:47 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:15:47:53793][http-nio-9090-exec-7] INFO  p6spy - 2025-09-16 09:15:47 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:26:20:686645][http-nio-9090-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:26:20:686647][http-nio-9090-exec-10] INFO  p6spy - 2025-09-16 09:26:20 | OperationTime : 1ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:26:20:686649][http-nio-9090-exec-10] INFO  p6spy - 2025-09-16 09:26:20 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:26:20:686657][http-nio-9090-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 09:26:21:687063][http-nio-9090-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:26:21:687064][http-nio-9090-exec-3] INFO  p6spy - 2025-09-16 09:26:21 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:26:21:687066][http-nio-9090-exec-3] INFO  p6spy - 2025-09-16 09:26:21 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:26:21:687069][http-nio-9090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 09:26:29:695885][http-nio-9090-exec-6] INFO  p6spy - 2025-09-16 09:26:29 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:26:29:695888][http-nio-9090-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.Exception: 파일 형식이 올바르지 않습니다. 이미지만 가능합니다.]
+[2025-09-16 09:26:58:724146][http-nio-9090-exec-9] INFO  p6spy - 2025-09-16 09:26:58 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:26:58:724148][http-nio-9090-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.Exception: 파일 형식이 올바르지 않습니다. 이미지만 가능합니다.]
+[2025-09-16 09:27:45:771881][http-nio-9090-exec-3] INFO  p6spy - 2025-09-16 09:27:45 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:27:45:771884][http-nio-9090-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.Exception: 썸네일 생성 오류]
+[2025-09-16 09:29:18:864342][http-nio-9090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:29:18:864343][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 09:29:18 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:29:18:864345][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 09:29:18 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:29:18:864348][http-nio-9090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 09:29:18:864726][http-nio-9090-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:29:18:864727][http-nio-9090-exec-9] INFO  p6spy - 2025-09-16 09:29:18 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:29:18:864730][http-nio-9090-exec-9] INFO  p6spy - 2025-09-16 09:29:18 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:29:18:864733][http-nio-9090-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 09:29:24:870610][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 09:29:24 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:29:24:870612][http-nio-9090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.Exception: 파일 형식이 올바르지 않습니다. 이미지만 가능합니다.]
+[2025-09-16 09:29:32:878496][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 6 deletions, 0 modifications)
+[2025-09-16 09:29:32:878496][Thread-11] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+[2025-09-16 09:29:32:878511][tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:29:32:878517][tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+[2025-09-16 09:29:32:878518][Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:29:32:878519][Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 09:29:32:878532][Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2025-09-16 09:29:32:878556][Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2025-09-16 09:29:32:878713][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 26192 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 09:29:32:878713][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 09:29:33:879222][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 09:29:33:879265][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+[2025-09-16 09:29:33:879347][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 09:29:33:879480][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 09:29:33:879480][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:29:33:879480][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 09:29:33:879480][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 09:29:33:879549][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 09:29:33:879549][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 821 ms
+[2025-09-16 09:29:33:879597][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 09:29:33:879614][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 09:29:33:879631][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 09:29:33:879634][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2025-09-16 09:29:33:879639][restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.mariadb.jdbc.Connection@516c4470
+[2025-09-16 09:29:33:879639][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[2025-09-16 09:29:33:879640][restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-09-16 09:29:33:879641][restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -> dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@29b6a4c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6ba69d63)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@38619022) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c8f2901)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20830af4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7f91c602)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4b45a952) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@e47461a)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@36ab298c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@47fb488d)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@21927619) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@155193a7)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7a592fc8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@677bbf2e)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@55eb3f66) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4c3e52d7)
+[2025-09-16 09:29:33:879642][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7faa13f7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@451241e3)
+[2025-09-16 09:29:33:879746][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 09:29:33:879746][restartedMain] INFO  p6spy - 2025-09-16 09:29:33 | OperationTime : 1ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        table_name 
+    from
+        information_schema.TABLES 
+    where
+        table_schema=database() 
+        and table_type='SEQUENCE'
+[2025-09-16 09:29:33:879763][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 09:29:34:879897][restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fe330183-7937-4240-af5a-d93a06ded7c7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-09-16 09:29:34:879897][restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-09-16 09:29:34:879897][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2025-09-16 09:29:34:880046][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2025-09-16 09:29:34:880050][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2025-09-16 09:29:34:880065][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:29:34:880065][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+[2025-09-16 09:29:34:880082][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Started AppBootApplication in 1.446 seconds (process running for 881.014)
+[2025-09-16 09:29:34:880082][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2025-09-16 09:29:38:1510][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 09:29:38:1605][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 33412 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 09:29:38:1605][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 09:29:39:2035][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2025-09-16 09:29:39:2035][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2025-09-16 09:29:41:3733][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 09:29:41:3834][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+[2025-09-16 09:29:41:4017][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 09:29:42:5196][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 09:29:42:5228][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:29:42:5230][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 09:29:42:5230][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 09:29:42:5398][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 09:29:42:5398][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3363 ms
+[2025-09-16 09:29:43:5775][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 09:29:43:5854][restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 09:29:43:5907][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 09:29:43:6259][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 09:29:43:6304][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 09:29:43:6416][restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3cb3b461
+[2025-09-16 09:29:43:6419][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 09:29:43:6438][restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-09-16 09:29:43:6470][restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -> dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@52508420) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7e8c0844)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6ab1f2e3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7a596cc5)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c7e862a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@32ae75c9)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@576daf95) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6663def9)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3e744bc9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7fb571f3)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@459e7897) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d72e2cb)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21c4dcaf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@75aa0b8d)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@43c69f6f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@69884966)
+[2025-09-16 09:29:43:6470][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6eaec15c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4b7d5967)
+[2025-09-16 09:29:44:7668][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 09:29:45:7706][restartedMain] INFO  p6spy - 2025-09-16 09:29:45 | OperationTime : 5ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        table_name 
+    from
+        information_schema.TABLES 
+    where
+        table_schema=database() 
+        and table_type='SEQUENCE'
+[2025-09-16 09:29:45:7739][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 09:29:45:8375][restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[2025-09-16 09:29:46:9461][restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6ad92819-25fc-4c78-88ab-95ace3c06d88
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-09-16 09:29:46:9477][restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-09-16 09:29:46:9654][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2025-09-16 09:29:47:10074][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2025-09-16 09:29:47:10149][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2025-09-16 09:29:47:10171][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:29:47:10188][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+[2025-09-16 09:29:47:10204][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Started AppBootApplication in 9.491 seconds (process running for 11.036)
+[2025-09-16 09:29:51:14073][http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-09-16 09:29:51:14073][http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2025-09-16 09:29:51:14073][http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2025-09-16 09:29:52:15527][http-nio-9090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 09:29:52:15553][http-nio-9090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:29:52:15557][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 09:29:52 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:29:52:15593][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 09:29:52 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:30:02:24959][http-nio-9090-exec-4] INFO  p6spy - 2025-09-16 09:30:02 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:30:02:24966][http-nio-9090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.Exception: 파일 형식이 올바르지 않습니다. 이미지만 가능합니다.]
+[2025-09-16 09:31:52:134705][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+[2025-09-16 09:31:52:134709][Thread-11] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+[2025-09-16 09:31:52:134710][tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:31:52:134713][tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+[2025-09-16 09:31:52:134714][Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:31:52:134718][Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 09:31:52:134721][Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2025-09-16 09:31:52:134726][Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2025-09-16 09:31:52:134851][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 33412 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 09:31:52:134851][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 09:31:52:135341][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 09:31:52:135387][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+[2025-09-16 09:31:52:135470][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 09:31:52:135663][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 09:31:52:135665][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:31:52:135666][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 09:31:52:135666][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 09:31:53:135773][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 09:31:53:135773][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 919 ms
+[2025-09-16 09:31:53:135887][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 09:31:53:135891][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 09:31:53:135929][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 09:31:53:135929][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2025-09-16 09:31:55:1379][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 09:31:56:1471][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 3212 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 09:31:56:1472][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 09:31:56:1932][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2025-09-16 09:31:56:1932][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2025-09-16 09:31:58:3736][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 09:31:58:3842][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 3 JPA repository interfaces.
+[2025-09-16 09:31:58:4020][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 09:31:59:5146][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 09:31:59:5168][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:31:59:5172][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 09:31:59:5172][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 09:31:59:5344][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 09:31:59:5344][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3410 ms
+[2025-09-16 09:32:00:5743][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 09:32:00:5809][restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 09:32:00:5849][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 09:32:00:6252][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 09:32:00:6295][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 09:32:01:6404][restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@75fdc99
+[2025-09-16 09:32:01:6407][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 09:32:01:6443][restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-09-16 09:32:01:6466][restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -> dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 09:32:01:6478][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@100df2b2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@44b6506b)
+[2025-09-16 09:32:01:6478][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6d33628a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3e288801)
+[2025-09-16 09:32:01:6478][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@414f7514) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@378c505e)
+[2025-09-16 09:32:01:6479][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41dd4317) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3bcfa3ad)
+[2025-09-16 09:32:01:6479][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1929615) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@54c928d9)
+[2025-09-16 09:32:01:6479][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7fa70cac) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@39331a3e)
+[2025-09-16 09:32:01:6479][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c040133) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@31166b8a)
+[2025-09-16 09:32:01:6479][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7693d368) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@57d0c56e)
+[2025-09-16 09:32:01:6479][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5bd15b3e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@599921f5)
+[2025-09-16 09:32:02:7732][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 09:32:02:7775][restartedMain] INFO  p6spy - 2025-09-16 09:32:02 | OperationTime : 4ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        table_name 
+    from
+        information_schema.TABLES 
+    where
+        table_schema=database() 
+        and table_type='SEQUENCE'
+[2025-09-16 09:32:02:7802][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 09:32:03:8430][restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[2025-09-16 09:32:04:9766][restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d7264422-ff7c-4c19-9fc5-f3160f62abfb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-09-16 09:32:04:9785][restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-09-16 09:32:04:9982][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2025-09-16 09:32:05:10517][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2025-09-16 09:32:05:10619][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2025-09-16 09:32:05:10644][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[2025-09-16 09:32:05:10675][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+[2025-09-16 09:32:05:10686][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Started AppBootApplication in 10.096 seconds (process running for 11.418)
+[2025-09-16 09:32:16:21909][http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-09-16 09:32:16:21909][http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2025-09-16 09:32:16:21910][http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2025-09-16 09:32:17:23232][http-nio-9090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 09:32:17:23252][http-nio-9090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:32:17:23257][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 09:32:17 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:32:17:23294][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 09:32:17 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 09:32:26:31720][http-nio-9090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    where
+        ge1_0.nums=?
+[2025-09-16 09:32:26:31722][http-nio-9090-exec-2] INFO  p6spy - 2025-09-16 09:32:26 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    where
+        ge1_0.nums='7c7ba8cc75'
+[2025-09-16 09:32:26:31775][http-nio-9090-exec-2] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        gallery
+        (create_date, file_name, file_path, file_thumb_name, stored_name, title, update_date, writer, nums) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2025-09-16 09:32:26:31780][http-nio-9090-exec-2] INFO  p6spy - 2025-09-16 09:32:26 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    insert 
+    into
+        gallery
+        (create_date, file_name, file_path, file_thumb_name, stored_name, title, update_date, writer, nums) 
+    values
+        ('2025-09-16T09:32:26.353+0900', '4.PNG', 'c:\\files\\upload\\gallery\\', '5a18a322e2884017.png', 'd73abe03cef643a7.png', 'ㅏㅏ', NULL, 'admin', '7c7ba8cc75')
+[2025-09-16 09:32:26:31783][http-nio-9090-exec-2] INFO  p6spy - 2025-09-16 09:32:26 | OperationTime : 1ms | 
+P6Spy sql:
+
+[2025-09-16 09:32:27:32780][http-nio-9090-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 09:32:27:32782][http-nio-9090-exec-5] INFO  p6spy - 2025-09-16 09:32:27 | OperationTime : 1ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 09:32:27:32784][http-nio-9090-exec-5] INFO  p6spy - 2025-09-16 09:32:27 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 10:17:43:2749287][http-nio-9090-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 10:17:43:2749289][http-nio-9090-exec-5] INFO  p6spy - 2025-09-16 10:17:43 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 10:17:43:2749290][http-nio-9090-exec-5] INFO  p6spy - 2025-09-16 10:17:43 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 10:17:43:2749306][http-nio-9090-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 10:18:07:2773349][http-nio-9090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[2025-09-16 10:21:30:2976044][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+[2025-09-16 10:21:30:2976056][Thread-11] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+[2025-09-16 10:21:30:2976056][tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:30:2976056][tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+[2025-09-16 10:21:30:2976056][Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:30:2976056][Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 10:21:30:2976073][Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2025-09-16 10:21:30:2976081][Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2025-09-16 10:21:30:2976293][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 3212 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 10:21:30:2976293][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 10:21:31:2977043][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 10:21:31:2977127][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+[2025-09-16 10:21:31:2977252][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 10:21:32:2977559][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 10:21:32:2977559][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:32:2977559][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 10:21:32:2977559][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 10:21:32:2977668][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 10:21:32:2977668][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1375 ms
+[2025-09-16 10:21:32:2977840][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 10:21:32:2977863][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 10:21:32:2977915][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 10:21:32:2977919][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2025-09-16 10:21:32:2977928][restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.mariadb.jdbc.Connection@7fee6244
+[2025-09-16 10:21:32:2977928][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[2025-09-16 10:21:32:2977930][restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-09-16 10:21:32:2977933][restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -> dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@17e8a1b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5f95b5e4)
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5b9171a6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@566565fc)
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@23be0379) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5176a87f)
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13aefb6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7c8d30e8)
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2ffb51cb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4baa211b)
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1dbb2087) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@8a449a8)
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7da4247e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@679c6028)
+[2025-09-16 10:21:32:2977933][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2367cb44) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@9242f89)
+[2025-09-16 10:21:32:2977934][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@557f6d07) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5166daa0)
+[2025-09-16 10:21:32:2978270][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 10:21:32:2978276][restartedMain] INFO  p6spy - 2025-09-16 10:21:32 | OperationTime : 2ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        table_name 
+    from
+        information_schema.TABLES 
+    where
+        table_schema=database() 
+        and table_type='SEQUENCE'
+[2025-09-16 10:21:32:2978309][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 10:21:33:2978609][restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 18e9c8ef-aade-44b9-b461-172ea08e8815
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-09-16 10:21:33:2978609][restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-09-16 10:21:33:2978625][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2025-09-16 10:21:33:2978705][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2025-09-16 10:21:33:2978721][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2025-09-16 10:21:33:2978737][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:33:2978741][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+[2025-09-16 10:21:33:2978741][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Started AppBootApplication in 2.584 seconds (process running for 2979.487)
+[2025-09-16 10:21:33:2978758][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2025-09-16 10:21:34:2980207][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+[2025-09-16 10:21:34:2980208][Thread-13] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+[2025-09-16 10:21:34:2980209][tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:34:2980212][tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+[2025-09-16 10:21:34:2980213][Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:34:2980215][Thread-13] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 10:21:34:2980215][Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[2025-09-16 10:21:34:2980219][Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[2025-09-16 10:21:34:2980354][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 3212 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 10:21:34:2980354][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 10:21:35:2980779][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 10:21:35:2980819][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+[2025-09-16 10:21:35:2980865][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 10:21:35:2980970][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 10:21:35:2980970][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:35:2980970][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 10:21:35:2980970][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 10:21:35:2981058][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 10:21:35:2981058][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 701 ms
+[2025-09-16 10:21:35:2981124][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 10:21:35:2981124][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 10:21:35:2981149][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 10:21:35:2981150][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+[2025-09-16 10:21:35:2981154][restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.mariadb.jdbc.Connection@5289fb69
+[2025-09-16 10:21:35:2981154][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+[2025-09-16 10:21:35:2981155][restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-09-16 10:21:35:2981158][restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -> dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5245539b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5db5ad46)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@54e9e117) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3f2ee391)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@470fa664) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3720ec5e)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2c5a42f4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@64a01e85)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5ea6b8f3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6e54fd65)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@10e75fb9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@74572f16)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1fdd604f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56ab1904)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7c1b9eff) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@31f931f5)
+[2025-09-16 10:21:35:2981158][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4552f09d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4b3fa20a)
+[2025-09-16 10:21:35:2981300][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 10:21:35:2981305][restartedMain] INFO  p6spy - 2025-09-16 10:21:35 | OperationTime : 1ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        table_name 
+    from
+        information_schema.TABLES 
+    where
+        table_schema=database() 
+        and table_type='SEQUENCE'
+[2025-09-16 10:21:35:2981329][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 10:21:36:2981544][restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: eec9ac0c-5993-4d61-a0c9-2a736e065597
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-09-16 10:21:36:2981545][restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-09-16 10:21:36:2981557][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2025-09-16 10:21:36:2981610][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2025-09-16 10:21:36:2981614][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2025-09-16 10:21:36:2981626][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:21:36:2981631][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+[2025-09-16 10:21:36:2981634][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Started AppBootApplication in 1.357 seconds (process running for 2982.366)
+[2025-09-16 10:21:36:2981635][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2025-09-16 10:22:35:3040500][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+[2025-09-16 10:22:35:3040501][Thread-20] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+[2025-09-16 10:22:35:3040501][tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:22:35:3040505][tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+[2025-09-16 10:22:35:3040505][Thread-20] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:22:35:3040507][Thread-20] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 10:22:35:3040507][Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+[2025-09-16 10:22:35:3040511][Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+[2025-09-16 10:22:35:3040607][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 3212 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 10:22:35:3040608][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 10:22:35:3040993][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 10:22:35:3041042][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+[2025-09-16 10:22:35:3041098][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 10:22:35:3041231][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 10:22:35:3041231][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:22:35:3041231][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 10:22:35:3041231][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 10:22:59:1426][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 10:22:59:1510][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Starting AppBootApplication using Java 21.0.7 with PID 25148 (C:\김하람\spring_boot_workspace\app-boot\build\classes\java\main started by ere01 in C:\김하람\spring_boot_workspace\app-boot)
+[2025-09-16 10:22:59:1510][restartedMain] INFO  i.korea.app_boot.AppBootApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 10:22:59:2027][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2025-09-16 10:22:59:2027][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2025-09-16 10:23:01:3912][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 10:23:01:4024][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+[2025-09-16 10:23:01:4244][restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webConfig; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [it/korea/app_boot/common/config/WebConfig.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+[2025-09-16 10:23:03:5459][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+[2025-09-16 10:23:03:5499][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:23:03:5502][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2025-09-16 10:23:03:5502][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 10:23:03:5656][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 10:23:03:5656][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3629 ms
+[2025-09-16 10:23:03:6022][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 10:23:03:6097][restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 10:23:03:6143][restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 10:23:04:6506][restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 10:23:04:6541][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 10:23:04:6644][restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@48355f3d
+[2025-09-16 10:23:04:6647][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 10:23:04:6679][restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2025-09-16 10:23:04:6699][restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -> dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 10:23:04:6708][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6b57e707) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@51df1e61)
+[2025-09-16 10:23:04:6708][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56b0af12) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@100df2b2)
+[2025-09-16 10:23:04:6708][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@44b6506b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6d33628a)
+[2025-09-16 10:23:04:6708][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3e288801) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@414f7514)
+[2025-09-16 10:23:04:6708][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@378c505e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41dd4317)
+[2025-09-16 10:23:04:6708][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3bcfa3ad) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1929615)
+[2025-09-16 10:23:04:6709][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@54c928d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7fa70cac)
+[2025-09-16 10:23:04:6709][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39331a3e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2c040133)
+[2025-09-16 10:23:04:6709][restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@31166b8a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7693d368)
+[2025-09-16 10:23:05:7930][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 10:23:05:7961][restartedMain] INFO  p6spy - 2025-09-16 10:23:05 | OperationTime : 4ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        table_name 
+    from
+        information_schema.TABLES 
+    where
+        table_schema=database() 
+        and table_type='SEQUENCE'
+[2025-09-16 10:23:05:8002][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 10:23:06:8617][restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[2025-09-16 10:23:07:9774][restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 688e6c91-8adc-44ad-997e-14857185cb9c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-09-16 10:23:07:9795][restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-09-16 10:23:07:10046][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2025-09-16 10:23:08:10446][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2025-09-16 10:23:08:10529][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2025-09-16 10:23:08:10561][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[2025-09-16 10:23:08:10578][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+[2025-09-16 10:23:08:10599][restartedMain] INFO  i.korea.app_boot.AppBootApplication - Started AppBootApplication in 9.916 seconds (process running for 11.44)
+[2025-09-16 10:23:16:18381][http-nio-9090-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-09-16 10:23:16:18381][http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2025-09-16 10:23:16:18381][http-nio-9090-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2025-09-16 10:23:17:19833][http-nio-9090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 10:23:17:19859][http-nio-9090-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 10:23:17:19864][http-nio-9090-exec-3] INFO  p6spy - 2025-09-16 10:23:17 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 10:23:17:19913][http-nio-9090-exec-3] INFO  p6spy - 2025-09-16 10:23:17 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 10:23:32:34800][http-nio-9090-exec-4] INFO  p6spy - 2025-09-16 10:23:32 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 10:23:32:34805][http-nio-9090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.Exception: 수정할 글 ID가 없습니다.]
+[2025-09-16 10:24:48:111007][http-nio-9090-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 10:24:48:111017][http-nio-9090-exec-3] INFO  p6spy - 2025-09-16 10:24:48 | OperationTime : 1ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 10:24:48:111020][http-nio-9090-exec-3] INFO  p6spy - 2025-09-16 10:24:48 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 10:24:48:111027][http-nio-9090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 10:24:49:111755][http-nio-9090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 10:24:49:111755][http-nio-9090-exec-2] INFO  p6spy - 2025-09-16 10:24:49 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 10:24:49:111755][http-nio-9090-exec-2] INFO  p6spy - 2025-09-16 10:24:49 | OperationTime : 0ms | 
+P6Spy sql:
+
+[2025-09-16 10:24:49:111767][http-nio-9090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+[2025-09-16 10:24:54:117149][http-nio-9090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    where
+        ge1_0.nums=?
+[2025-09-16 10:24:54:117151][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 10:24:54 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    where
+        ge1_0.nums='7c7ba8cc75'
+[2025-09-16 10:24:55:117340][http-nio-9090-exec-1] DEBUG org.hibernate.SQL - 
+    update
+        gallery 
+    set
+        file_name=?,
+        file_path=?,
+        file_thumb_name=?,
+        stored_name=?,
+        title=?,
+        update_date=?,
+        writer=? 
+    where
+        nums=?
+[2025-09-16 10:24:55:117346][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 10:24:55 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    update
+        gallery 
+    set
+        file_name='1.PNG',
+        file_path='c:\\files\\upload\\gallery\\',
+        file_thumb_name='b0c89753b3994fb2.png',
+        stored_name='6340db1344884c22.png',
+        title='ll',
+        update_date='2025-09-16T10:24:55.013+0900',
+        writer='admin' 
+    where
+        nums='7c7ba8cc75'
+[2025-09-16 10:24:55:117349][http-nio-9090-exec-1] INFO  p6spy - 2025-09-16 10:24:55 | OperationTime : 1ms | 
+P6Spy sql:
+
+[2025-09-16 10:24:55:118178][http-nio-9090-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        ?, ?
+[2025-09-16 10:24:55:118179][http-nio-9090-exec-4] INFO  p6spy - 2025-09-16 10:24:55 | OperationTime : 0ms | 
+ HeFormatSql(P6Spy sql,Hibernate format):
+
+    select
+        ge1_0.nums,
+        ge1_0.create_date,
+        ge1_0.file_name,
+        ge1_0.file_path,
+        ge1_0.file_thumb_name,
+        ge1_0.stored_name,
+        ge1_0.title,
+        ge1_0.update_date,
+        ge1_0.writer 
+    from
+        gallery ge1_0 
+    order by
+        ge1_0.create_date desc 
+    limit
+        0, 10
+[2025-09-16 10:24:55:118180][http-nio-9090-exec-4] INFO  p6spy - 2025-09-16 10:24:55 | OperationTime : 0ms | 
+P6Spy sql:
+
