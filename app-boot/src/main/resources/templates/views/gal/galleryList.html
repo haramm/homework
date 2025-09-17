@@ -55,7 +55,7 @@
             <section class="row" style="margin-top: 15px;">
                 <div class="col-12" style="width: 100%; text-align: right; margin-right: 80px;">
                     <button type="button" class="btn btn-primary" onclick="openModal('add')">글 등록</button>
-                    <button type="button" class="btn btn-danger" onclick="openModal('update')">글 수정</button>
+                    <button type="button" class="btn btn-danger" onclick="deleteGallery()">글 삭제</button>
                 </div>
             </section>
         </section>
@@ -104,8 +104,9 @@
             if(modalType === 'add') {
                 addModal(titles[0]);
             }
+            
             else {
-                updateModal(titles[1]);
+                deleteModal(titles[1]);
             }
         }
 
@@ -210,9 +211,40 @@
             });
         }
 
+        const deleteGallery = () => {
+            // 선택된 체크박스들 가져오기
+            const checkedBoxes = $('input[name="imgChk"]:checked');
+            
+            // 선택된 체크박스 없으면 조기종료
+            if (checkedBoxes.length === 0) {
+                alert("삭제할 항목을 선택해주세요.");
+                return false;
+            }
+
+            // 삭제 취소해도 조기 종료
+            if (!confirm("선택한 항목을 삭제하시겠습니까?")) {
+                return false;
+            }
+
+            // 체크된 항목들의 nums값 가져와서 배열형태로 전환(index 불필요하여 _ 사용)
+            const numsList = $('input[name="imgChk"]:checked').map((_, e) => e.value).get();
+            
+            
+            axios.delete('/api/v1/gal', { data: { nums: numsList } })
+                .then(res => {
+                    alert("삭제되었습니다.");
+                    getData();
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("삭제 중 오류가 발생했습니다.");
+                });
+        }
+
         $(document).ready(function() {
             getData();
         });
+        
     </script>
 </div>
 </html>

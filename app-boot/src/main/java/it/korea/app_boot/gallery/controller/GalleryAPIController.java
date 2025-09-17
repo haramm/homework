@@ -1,6 +1,7 @@
 package it.korea.app_boot.gallery.controller;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.data.domain.Pageable;
@@ -8,10 +9,12 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -70,5 +73,14 @@ public class GalleryAPIController {
         }
 
         return new ResponseEntity<>(resultMap, status);
+    }
+
+    // 삭제
+    @DeleteMapping("/gal")
+    public ResponseEntity<String> deleteGallery(@RequestBody Map<String, List<String>> request) {
+        List<String> numsList = request.get("nums");
+        
+        galleryService.deleteGallery(numsList);
+        return new ResponseEntity<>("삭제 완료", HttpStatus.OK);
     }
 }

@@ -70,6 +70,14 @@ public class GalleryService {
         galleryRepository.save(entity);
     }
 
+    // 갤러리 삭제
+    @Transactional
+    public void deleteGallery(List<String> numsList) {
+        for (String id : numsList) {
+            galleryRepository.deleteById(id);
+        }
+    }
+
     // 엔티티 생성, 기존 파일 존재 시 삭제 후 등록 -> 수정, 생성 동시 기능 -> 해당 기능 사용하여 위 메소드에서 db에 저장
     private GalleryEntity createGalleryEntity(GalleryRequest request, GalleryEntity entity) throws Exception {
         boolean isNew = (entity == null);
